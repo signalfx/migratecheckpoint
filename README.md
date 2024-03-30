@@ -31,3 +31,17 @@ variables and its default values.
 - name: JOURNALD_LOG_CAPTURE_REGEX
   value: "\\/splunkd\\-fluentd\\-journald\\-(?P<name>[\\w0-9-_]+)\\.pos\\.json"
 ```
+
+## Installation
+
+You can install via go install:
+
+```
+go install github.com/signalfx/migratecheckpoint@latest
+```
+
+You can build a Docker image by checking out the repository and use the local Dockerfile:
+
+```
+docker build -t migratecheckpoint .
+```
